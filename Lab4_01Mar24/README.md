@@ -49,6 +49,15 @@ The input consist of two parts. The first part (the first line) contains two num
 
 ## Question 6  
 Giving two matrices multiply them and output the result.  
+![Matrix](matrix.png)  
+The example calculation is (1x8) + (2x10) + (3x12) = 64  
+In the above example, the input will become:  
+2 3 3 2  
+1 2 3 4 5 6  
+7 8 9 10 11 12  
+The output should be:  
+58 64 139 154
+
 Note that we can do the multiplication of the matrix only if the number of columns of the first matrix equals the number of rows of the second matrix. Otherwise, print “Invalid”.  
 Each case has three lines. The first line consists of 1) a number of rows of the first matrix, 2) a number of columns of the first matrix, 3) a number of rows of the second matrix, and 4) a number of columns of the second matrix. The second line and the third line contain a list of values from the first row until the last row of the first and the second matrix accordingly. The output is the resulted matrix from the multiplication.
 ### For example:
@@ -64,6 +73,10 @@ Each case has three lines. The first line consists of 1) a number of rows of the
 
 ## Question 7  
 Giving a black rubik 5x5x5 (all pieces of rubik are black at the initial state as shown in the picture below) and toggle positions, write a program to toggle the color between black and white according to the given conditions and return the number of white pieces.
+<p float="left">
+  <img src="rubik.JPG" width="40%" />
+  <img src="rubik_adjacent.JPG" width="40%" />
+</p>
 
 **Toggle Conditions**  
 1. At the selected position, a piece of rubik will be toggled. The adjacent pieces are also toggled. These include the front, the behind, the left, the right, the above, and the below.
