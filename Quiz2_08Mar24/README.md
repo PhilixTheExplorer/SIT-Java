@@ -31,15 +31,15 @@ For example, the matrix of size 3 has following list of integer.
 7	8	9
 
 The upper triangular matrix is:   
-<span style="color:red;">1 </span><span style="color:red;">2 </span><span style="color:red;">3</span>  
-<span>4 </span><span style="color:red;">5 </span><span style="color:red;">6</span>  
-<span>7 </span><span>8 </span><span style="color:red;">9</span>  
+1	2	3  
+0	5	6  
+0	0	9  
 Thus, the sum of upper trianular matrix is 1+2+3+5+6+9 = 26
 
 The lower triangular matrix is:  
-<span style="color:red;">1 </span><span>2 </span><span>3</span>  
-<span style="color:red;">4 </span><span style="color:red;">5 </span><span>6</span>  
-<span style="color:red;">7 </span><span style="color:red;">8 </span><span style="color:red;">9</span>  
+1	0 0  
+4	5	0  
+7	8	9  
 Thus, the sum of lower trianular matrix is 1+5+9+4+8+7 = 34
 
 ### For example:
