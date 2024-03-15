@@ -69,7 +69,7 @@ With these conditions, it can be depicted by using the Finite State Machine diag
 | 0 0 <br> - 1| DnD |
 | 0 0 <br> 1 -| MuR |
 
-## Question 3
+## Question 4
 Write a program to find a submatrix by deleting a row and a column from a matrix. Then transpose the submatrix.
 
 Hint: A submatrix is obtained by deleting any rows and columns. For example,
