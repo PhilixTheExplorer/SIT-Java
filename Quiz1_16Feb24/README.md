@@ -101,5 +101,5 @@ The output is the encrypted sentence.
 | **Input**     | **Result** |
 |:--------------|:-----------|
 |Hello World <br> VDMOUCQXPEYJMGHQBZPGXPJLQJ <br> OIKBDISZUHZPIQPXREBOPBSKCA <br> COUCWJATHABJGZJQYZKCYZRLPC| BBKCL OBZKH|
-
-
+|The Fuhrer Adolf Hitler is dead A treacherous group of party leaders has attempted to exploit the situation by attacking our embattled soldiers from the rear to seize power for themselves <br> HDIRPOJSHGCWEJGWHJNCLORWUO <br> MSIPXZDJEHPTQUITYRZMTNZXMX <br> YJLELLWBQKNMVQSGQXXOHSAREP|QKB KORPPQ EBQPH QPELXQ LB QGOL L QGVEVGROREP QEBKO OR LQPRO KPBXOHV EOE BGVVPGORR RO VOROVOO PGQ XKRGQEQRR QR BGBQQOOGO REG VHQQVVHVV KVQVPXHO QGPH GQK VQQP VQ POOQB RRRQO KPR KVXQQQQKPV|
+|Amature seek the sun get eaten power stay in shadow <br> MVVUNVTWYKKZNBYLVAJBHWWMEZ <br> GNUWTGXDNEXLKHZGXRDQQXFUKG <br> DREHBTPZELEJAWLFOYBKDSDUJF| EWUTKTU PZWH ZWP OUO ETZ KTJUP EPZOW DPOT TD TUFTTP|
