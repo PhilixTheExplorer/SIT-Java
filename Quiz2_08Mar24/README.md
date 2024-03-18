@@ -105,7 +105,7 @@ The first day of planting, the 3D field is visualized as follow:
 
 The second day of planting, the 3D field is visualized as follow:
 
-![Day 2](day3.png)
+![Day 2](day2.png)
 
 The third day of planting, the 3D field is visualized as follow:
 
