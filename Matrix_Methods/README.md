@@ -1,1 +1,7 @@
-
+- Diagonal
+- Diagonal Reverse
+- Zigzag
+- Zigzag Reverse
+- Spiral
+- Rotate Clockwise
+- Rotate Anticlockwise
