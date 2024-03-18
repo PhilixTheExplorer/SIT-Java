@@ -83,7 +83,8 @@ Given the 4 x 4 array, the traversal form is:
 | 4 4 |1 2 3 4  <br> 12 13 14 5 <br> 11 16 15 6 <br> 10 9 8 7|
 | 5 4 |1 2 3 4 <br> 14 15 16 5 <br> 13 20 17 6 <br> 12 19 18 7 <br> 11 10 9 8|
 | 6 4 |1 2 3 4 <br> 16 17 18 5 <br> 15 24 19 6 <br> 14 23 20 7 <br> 13 22 21 8 <br> 12 11 10 9|
-|5 5 |1 2 3 4 5 <br> 16 17 18 19 6 <br> 15 24 25 20 7 <br> 14 23 22 21 8 <br> 13 12 11 10 9|
+| 5 5 |1 2 3 4 5 <br> 16 17 18 19 6 <br> 15 24 25 20 7 <br> 14 23 22 21 8 <br> 13 12 11 10 9|
+| 5 8 |1 2 3 4 5 6 7 8 <br> 22 23 24 25 26 27 28 9 <br> 21 36 37 38 39 40 29 10 <br> 20 35 34 33 32 31 30 11 <br> 19 18 17 16 15 14 13 12|
 
 ## Question 5
 The gardener is cultivating a 3D grass field by planting a block of grass each day. For each day, the grass exhibits continuous growth, expanding into neighboring cells across six dimensions: up, down, left, right, front, and back. The gardener intends to continue planting for several days. On the final day of planting, write a program to determine the total number of cells occupied by the grass.
