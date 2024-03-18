@@ -116,8 +116,6 @@ From the example, after planting for 3 days, the total number of occupied cell i
 | **Input**     | **Result** |
 |:--------------|:-----------|
 | 5 5 3 <br> 3 <br> 0 0 0 <br> 2 3 1 <br> 1 3 2 | 18|
-|3 3 3 <br> 2 <br> 0 0 0 <br> 2 2 2| 5 |
-
-
-
-
+| 3 3 3 <br> 2 <br> 0 0 0 <br> 2 2 2| 5 |
+| 5 4 3 <br> 3 <br> 3 0 2 <br> 4 1 1 <br> 2 2 2| 17 |
+| 4 4 5 <br> 4 <br> 1 2 3 <br> 2 2 2 <br> 3 1 4 <br> 0 0 1| 53 |
