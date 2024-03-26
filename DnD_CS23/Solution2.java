@@ -6,7 +6,7 @@ public class Solution2 {
         int n = sc.nextInt();
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            String word = sc.next();
+            String word = sc.next().toLowerCase();
             if (i % 2 == 0) {
                 word = word.toUpperCase();
             }
