@@ -7,7 +7,7 @@ Your task is to write a program to output the reserved room for each reservation
 2. Find the most fit room (the least differences between number of guests and capacity).
 3. The search direction is from left to right and bottom to top floor. The example layout of the room number is shown below.
 
-![RoomPlan](RoomPlan.jpg)
+![RoomPlan](Additional_Images/RoomPlan.jpg)
 
 The input consists of 4 parts.
 1. Number of row, column and floor of hotel
