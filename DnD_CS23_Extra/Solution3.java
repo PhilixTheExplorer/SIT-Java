@@ -7,11 +7,15 @@ public class Solution3 {
         String[] strArray = new String[n];
         for (int i = 0; i < n; i++) {
             String word = sc.next().toLowerCase();
-            int len = word.length() - 1;
-            String first = word.charAt(0) + "";
-            String last = word.charAt(len) + "";
-            word = last + word.substring(1, len) + first;
-            strArray[n - 1 - i] = word;
+            char[] cArr = word.toCharArray();
+            char tmp = cArr[0];
+            cArr[0] = cArr[cArr.length - 1];
+            cArr[cArr.length - 1] = tmp;
+            String swappedString = "";
+            for (char c : cArr) {
+                swappedString += c + "";
+            }
+            strArray[n - 1 - i] = swappedString;
         }
         for (String word : strArray) {
             System.out.print(word + " ");
