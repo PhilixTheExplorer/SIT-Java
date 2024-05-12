@@ -326,7 +326,7 @@ class Transaction{
 ## Question 5
 Write an adventure game program according to the given the UML diagram below. 
 
-![PlayerUML](PlayerUML.jpg)
+![PlayerUML](PlayerUML.png)
 
 The Player class represents a player in the game. The Player class has an attribute named playerCount which will increase every time, if a new player is created (the playerCount value start from 0). Each player can own many characters. From the start, each player will earn 10 bahts and start at level 1 and player id will be generate using the number of playerCount. 
 
