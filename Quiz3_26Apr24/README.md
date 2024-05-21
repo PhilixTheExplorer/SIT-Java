@@ -48,6 +48,26 @@ Noted that the driver class is provided in the preloaded answer box. Do not chan
 |19.615 21 15|Volumn: 1471.125<br>Surface area: 855.0|
 |24 25 14|Volumn: 1568.0<br>Surface area: 896.0|
 |40 41 18|Volumn: 4320.0<br>Surface area: 1800.0|
+```
+import java.util.Scanner;
+
+public class PyramidDriver {
+
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    double height = sc.nextDouble();
+    double slantheight = sc.nextDouble();
+    double basewidth = sc.nextDouble();
+    Pyramid p = new Pyramid(height, slantheight, basewidth);
+    System.out.println("Volumn: " + p.getVolumn());
+    System.out.println("Surface area: " + p.getArea());
+  }
+}
+
+class Pyramid {
+  //put your code here
+}
+```
 
 ## Question 4
 Have you ever play Harvest Moon? In the game, you can plant some crops to harvest for selling. Each time you sow a bag of seeds, seeds are spreaded into 9 cells in the field as shown below.
