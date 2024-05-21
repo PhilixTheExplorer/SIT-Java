@@ -2,6 +2,11 @@
 Given a Car class and a driver class called CarCaller, please complete a Car class that supports the driver class.
 
 A Car class should contains the data of car id (int), brand (String), color (String), the name of owner (String), and total driving distance (double). Each data should have getter and setter methods. It should provide at least two constructors: (i) a constructor taking only id as input and (ii) a constructor taking inputs for all attributes (i.e., id, brand, color, and owner name). It also has a method called drive which takes an input of driving distance as double. For each drive, the drive method will accumulate total driving distance for a car. The method getTotalDrivingDist must return total driving distance of a car.
+
+| **Expected**  |
+|:--------------|
+|----- car1 Info -----<br>id: 15012016 brand: Lamborghini Veneno color: Black owner: James total driving distance: 135.0 <br>----- car2 Info ----- <br>id: 20022011 brand: Jajuar XKR-S color: Blue owner: Paul total driving distance: 350.0 <br>----- car3 Info ----- <br>id: 11112015 brand: Mercedes-AMG GT color: Yello owner: Smith total driving distance: 0.0|
+
 ```
 class Car {
 	//put your code here
@@ -64,6 +69,12 @@ f.        A method named getArea() that returns the surface area of this box.
 
 Note that the driver class is provided in the preloaded answer box. Please do not modify the driver class otherwise your result may be incorrect.
 
+### For example:
+| **Input**     | **Result** |
+|:--------------|:-----------|
+|0| Default Box is Created <br> Capacity: 1.0 <br> Surface area: 6.0|
+|2<br>5 8 2<br>2.5 4.5 5|Capacity: 80.0<br>Surface area: 132.0<br>Capacity: 56.25<br>Surface area: 92.5|
+
 ```
 import java.util.Scanner;
 public class BoxDriver {
@@ -119,6 +130,12 @@ The clear method resets the value of result to 0.
 The BasicCalculatorTester class is a driver class that uses the BasicCalculator. In details, it will retrieve an input as a mathematics expression (String) and then tokennize the expression into number and operators. Each number will be evaluated according to the input operator, then it returns a result. For example: if the input is "2 *3 + 10 / 8", it should print the result as 2.0.
 
 The code of BasicCalculatorTester is already provided in you programming console. Please DO NOT modify this class, otherwise it may results to the failure. Your task is to write the code of the Calculator class and the BasicCalculator class. Important hint: DO NOT specify the visibility modifier for the Calculator class and the BasicCalculator class. The BasicCalculatorTester must be the only public class in this program.
+
+### For example:
+| **Input**     | **Result** |
+|:--------------|:-----------|
+| 2 * 3 + 10 / 8 | 2.0 |
+
 ```
 import java.util.Scanner;
 import java.util.StringTokenizer;
@@ -209,7 +226,12 @@ The Transaction class contains:
 
 - A method getTransactionId(), getDescription() and getAmount() which returns transactionId, description, and amount respectively.
 
-
+**Input**  
+1 1 3 4 2 2 4 4  
+3  
+1 2 500  
+3 4 100  
+1 3 200  
 
 A driver class BankSystemDriver is provide in the predefined answer box. DO NOT change anything in the driver class otherwise your result may be incorrect.
 ```
