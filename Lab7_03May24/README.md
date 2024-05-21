@@ -226,12 +226,10 @@ The Transaction class contains:
 
 - A method getTransactionId(), getDescription() and getAmount() which returns transactionId, description, and amount respectively.
 
-**Input**  
-1 1 3 4 2 2 4 4  
-3  
-1 2 500  
-3 4 100  
-1 3 200  
+### For example:
+| **Input**     | **Result** |
+|:--------------|:-----------|
+|1 1 3 4 2 2 4 4<br>3<br>1 2 500<br>3 4 100<br>1 3 200|---KrungThai---<br>Account ID: 100002<br>Account Name: John Wick<br>Account Balance: 10400.0<br>Transaction ID: T05<br>Transaction Description: Central Online Shopping<br>Transaction Amount: 100.0<br>Transaction ID: T06<br>Transaction Description: Debitcard<br>Transaction Amount: 500.0<br>Account ID: 100004<br>Account Name: Bean Hilton<br>Account Balance: 7700.0<br>Transaction ID: T04<br>Transaction Description: Hotel De Lunar<br>Transaction Amount: 700.0<br>Transaction ID: T07<br>Transaction Description: Major Movie&Ceneplex<br>Transaction Amount: 1000.0<br>Transaction ID: T08<br>Transaction Description: Peach Beach Resort & Restaurant<br>Transaction Amount: 700.0<br>---Kasikorn---<br>Account ID: 100003<br>Account Name: Mary Pink<br>Account Balance: 7000.0<br>Transaction ID: T03<br>Transaction Description: Medical Treatment<br>Transaction Amount: 1000.0<br>Account ID: 100001<br>Account Name: Ann Doe<br>Account Balance: 3400.0<br>Transaction ID: T01<br>Transaction Description: Shopping at Siam Center<br>Transaction Amount: 100.0<br>Transaction ID: T02<br>Transaction Description: Creditcard<br>Transaction Amount: 500.0|
 
 A driver class BankSystemDriver is provide in the predefined answer box. DO NOT change anything in the driver class otherwise your result may be incorrect.
 ```
@@ -370,8 +368,6 @@ A Player can buy new character using the method buyCharacter. The price for each
 
 The method getAllCharacter lists all characters' name the player has own. Print name of characters line by line. Hint: Use the loop to iterate through the ArrayList.
 
-
-
 The Character class is an abstract class which provides template for each character when a character is created, its level will start at 1. The method increaseLevel will increase the level by adding up the current level points to the input level points.
 
 The Geo, Anemo, and Electro class inherit properties from Character class. Each of them can perform different kind of attack to an enemy (i.e., stoneStatue, windFlow, electricCurrent). Attack skill will decrease an enemy healthPoint consider by character rank, character level, and class. The formula for calculating attack are:
@@ -385,6 +381,10 @@ Electro = (Level x 0.1) + (rank x 2) + 5
 When a character defeats the enemy (i.e., healthPoint <= 0), it should print (println) "You defeated an enemy" and its level will be increase by +1 by using the method increaseLevel.
 
 The driver class of *Tester* is provided in the answer box for testing the game system. Please do not modify the driver class since your output may be incorrect.
+
+| **Expected**  |
+|:--------------|
+|--------------------------------<br>Player: Float<br>Player Id: 0<br>Level: 1 Money: 10<br>--------------------------------<br>Player: BABA<br>Player Id: 1<br>Level: 1 Money: 10<br>--------------------------------<br>You do not own any character<br>You do not have enough money<br>--------------------------------<br>Player: Float<br>Player Id: 0<br>Level: 1 Money: 5<br>--------------------------------<br>Character: Beidou Level: 1<br>--------------------------------<br>Player: Float<br>Player Id: 0<br>Level: 6 Money: 15<br>--------------------------------<br>10.0<br>2.4000000000000004<br>You defeated an enemy<br>--------------------------------<br>You do not own this character<br>Beidou<br>Zhong Li<br>--------------------------------<br>Enemy Health: 5.0<br>Character: Zhong Li Level: 11<br>You defeated an enemy<br>Character: Zhong Li Level: 12<br>--------------------------------<br>The rank of this character are not supported|
 ```
 import java.util.ArrayList;
 
