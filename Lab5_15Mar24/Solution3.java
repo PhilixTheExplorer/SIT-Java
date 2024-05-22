@@ -1,32 +1,40 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Solution3 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String current_state = sc.nextLine();
-        String click = sc.nextLine();
-        String next_state = "NEUTRAL";
-        if (current_state.equals("1 0")) {
-            if (click.equals("1 -"))
-                next_state = "NEUTRAL";
-            else if (click.equals("- 1"))
-                next_state = "DnD";
-            else
-                next_state = "MuR";
-        } else if (current_state.equals("0 1")) {
-            if (click.equals("1 -"))
-                next_state = "MuR";
-            else if (click.equals("- 1"))
-                next_state = "NEUTRAL";
-            else
-                next_state = "DnD";
-        } else {
-            if (click.equals("1 -"))
-                next_state = "MuR";
-            else if (click.equals("- 1"))
-                next_state = "DnD";
-        }
-        System.out.println(next_state);
-        sc.close();
+
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    String curState = sc.nextLine();
+    String click = sc.nextLine();
+    String nextState = "";
+    switch (curState) {
+      case "0 0" -> {
+        nextState =
+          switch (click) {
+            case "- 1" -> "DnD";
+            case "1 -" -> "MuR";
+            default -> "NEUTRAL";
+          };
+      }
+      case "1 0" -> {
+        nextState =
+          switch (click) {
+            case "- 1" -> "DnD";
+            case "1 -" -> "NEUTRAL";
+            default -> "MuR";
+          };
+      }
+      case "0 1" -> {
+        nextState =
+          switch (click) {
+            case "- 1" -> "NEUTRAL";
+            case "1 -" -> "MuR";
+            default -> "DnD";
+          };
+      }
+      default -> {}
     }
+    System.out.println(nextState);
+    sc.close();
+  }
 }
