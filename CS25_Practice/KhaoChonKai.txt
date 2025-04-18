@@ -1,0 +1,85 @@
+In a Khao Chon Kai land where only the strongest and most disciplined students are chosen, six elite battalions stand ready to train the next generation of warriors. Each battalion specializes in unique skills and only allows specific student years to enlist. For each year, each student is required to attend the camp for only one batch. Each batch can have only the same year of students although the number of students is less than 660. As a training officer, your task is to determine the latest training day and battalion based on the number of students from each year level and the order of battalion as below.
+
+Each student is assigned to a specific battalion based on their year level:
+
+🐍 Serpent Legion         →      Only 2nd-year students
+🐅 White Tiger Battalion    →    Only 3rd-year students
+🐃 Iron Bull Battalion        →    Only 4th and 5th-year students
+🐆 Shadow Leopard Battalion    →    Only 2nd and 3rd-year students
+🦁 Royal Lion Battalion        →    Only 4th and 5th-year students
+🦅 Eagle King Battalion        →    Only 2nd and 3rd-year students
+Training Camp’s Rules:
+
+The training camp lasts for 90 days.
+Each batch (ผลัด) lasts 3 days.
+Each battalion (กองพัน) can accommodate 660 students per batch.
+Each battalion consists of 11 companies (กองร้อย).
+Each company has 10 platoons (หมวด), and each platoon has 2 squads (หมู่).
+All battalions start simultaneously.
+If a battalion allows multiple year levels, the lower year level enrolls first, alternating in each batch.
+Example: Royal Lion Battalion: Batch 1 → 4th-year, Batch 2 → 5th-year, Batch 3 → 4th-year, and so on.
+Battalion assignment follows a strict order. If a battalion is full for a batch, the next eligible battalion will be assigned.
+Example: A 3rd-year student with queue number 661 will be placed in Shadow Leopard instead of White Tiger, as White Tiger has reached its batch limit.
+Input:
+
+Number of students in each year level (Year 2, Year 3, Year 4, and Year 5)
+Output:
+
+The latest training day (last day of the last batch), which battalion was assigned the last batch.
+If all students cannot train within 90 days, return “Some students must wait until next year”.
+Explanation of example:
+
+Input:
+2000
+2000
+1950
+2000
+
+Output:
+Latest Training Day: 12
+Last Battalion: Iron Bull Battalion
+
+Battalion \ End day	3	6	9	12
+Serpent Legion	2nd year -  660	2nd year - 20	2nd year -  0	2nd year - 0
+White Tiger	3rd year - 660	3rd year - 660	3rd year - 0	3rd year - 0
+Iron Bull	4th year - 660	5th year - 660	4th year - 630	5th year - 20 (last)
+Shadow Leopard	2nd year - 660	3rd year - 660	2nd year - 0	3rd year - 0
+Royal Lion	4th year - 660	5th year - 660	5th year - 660	5th year - 0
+Eagle King	2nd year - 660	3rd year - 20	2nd year - 0	3rd year - 0
+Remain	
+2nd year = 20
+3rd year = 1340
+4th year = 630
+5th year = 2000
+2nd year = 0
+3rd year = 0
+4th year = 630
+5th year = 680
+2nd year = 0
+3rd year = 0
+4th year = 0
+5th year = 20
+2nd year = 0
+3rd year = 0
+4th year = 0
+5th year = 0
+For example:
+
+Input	Result
+2000
+2000
+1950
+2000
+Latest Training Day: 12
+Last Battalion: Iron Bull Battalion
+2000
+2000
+2000
+2000
+Latest Training Day: 12
+Last Battalion: Royal Lion Battalion
+20000
+25000
+30000
+35000
+Some students must wait until next year.
