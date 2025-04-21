@@ -48,7 +48,8 @@ public class Cupid {
         for (int i = 0; i < n; i++) {
             Person p1 = people.get(i);
 
-            int maxCommon = -1;
+            
+            int maxCommon = 0;
             int bestMatchIndex = -1;
             String bestMatchName = "";
 
@@ -67,7 +68,7 @@ public class Cupid {
                 int commonCount = common.size();
 
                 if (commonCount > maxCommon ||
-                        (commonCount == maxCommon && p2.name.compareTo(bestMatchName) < 0)) {
+                        (commonCount == maxCommon && p2.name.compareToIgnoreCase(bestMatchName) < 0)) {
                     maxCommon = commonCount;
                     bestMatchIndex = j;
                     bestMatchName = p2.name;
