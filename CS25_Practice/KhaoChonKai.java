@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class KhaoChonKaiCamp {
+public class KhaoChonKai {
     static class Battalion {
         String name;
         List<Integer> years;
@@ -22,11 +22,11 @@ public class KhaoChonKaiCamp {
 
         List<Battalion> battalions = List.of(
                 new Battalion("Serpent Legion", List.of(2)),
-                new Battalion("White Tiger Battalion", List.of(3)),
-                new Battalion("Iron Bull Battalion", List.of(4, 5)),
-                new Battalion("Shadow Leopard Battalion", List.of(2, 3)),
-                new Battalion("Royal Lion Battalion", List.of(4, 5)),
-                new Battalion("Eagle King Battalion", List.of(2, 3)));
+                new Battalion("White Tiger", List.of(3)),
+                new Battalion("Iron Bull", List.of(4, 5)),
+                new Battalion("Shadow Leopard", List.of(2, 3)),
+                new Battalion("Royal Lion", List.of(4, 5)),
+                new Battalion("Eagle King", List.of(2, 3)));
 
         String lastBattalion = "";
         int lastBatch = 1;
@@ -38,20 +38,48 @@ public class KhaoChonKaiCamp {
             if (students[2] + students[3] + students[4] + students[5] == 0) {
                 break;
             }
-            
+
             for (Battalion battalion : battalions) {
-                int year = battalion.years.size() == 1
-                        ? battalion.years.get(0)
-                        : battalion.years.get(batch % 2);
+                // Skip battalions that can't take students
+                if (battalion.years.size() == 1) {
+                    int year = battalion.years.get(0);
+                    if (students[year] == 0)
+                        continue;
+                } else {
+                    // For battalions with multiple years
+                    int year1 = battalion.years.get(0);
+                    int year2 = battalion.years.get(1);
+                    if (students[year1] == 0 && students[year2] == 0)
+                        continue;
+                }
 
-                if (students[year] == 0)
-                    continue;
+                // Process students
+                if (battalion.years.size() == 1) {
+                    // Single year battalion
+                    int year = battalion.years.get(0);
+                    int assignedCount = Math.min(660, students[year]);
+                    students[year] -= assignedCount;
+                } else {
+                    // Multi-year battalion, choose based on batch parity
+                    int yearIndex = (batch % 2 == 1) ? 0 : 1;
+                    int year = battalion.years.get(yearIndex);
 
-                int assignedCount = Math.min(660, students[year]);
-                students[year] -= assignedCount;
+                    // If the preferred year is empty, use the other one
+                    if (students[year] == 0) {
+                        year = battalion.years.get(1 - yearIndex);
+                    }
+
+                    int assignedCount = Math.min(660, students[year]);
+                    students[year] -= assignedCount;
+                }
 
                 lastBattalion = battalion.name;
                 lastBatch = batch;
+
+                // Check if all years are empty after each battalion
+                if (students[2] + students[3] + students[4] + students[5] == 0) {
+                    break;
+                }
             }
         }
 
@@ -62,4 +90,5 @@ public class KhaoChonKaiCamp {
             System.out.println("Last Battalion: " + lastBattalion + " Battalion");
         }
     }
+
 }
