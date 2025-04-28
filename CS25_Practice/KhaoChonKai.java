@@ -84,7 +84,7 @@ public class KhaoChonKai {
         }
 
         if (students[2] + students[3] + students[4] + students[5] > 0) {
-            System.out.println("Some students must wait until next year");
+            System.out.println("Some students must wait until next year.");
         } else {
             System.out.println("Latest Training Day: " + lastBatch * 3);
             System.out.println("Last Battalion: " + lastBattalion + " Battalion");
