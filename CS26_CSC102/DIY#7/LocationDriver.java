@@ -35,7 +35,7 @@ class Location {
 
 }
 
-public class Solution4 {
+public class LocationDriver {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
